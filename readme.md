@@ -182,3 +182,62 @@ int main(){
     }
 }
 ```
+
+#### Arquivo While1.c
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int i = 0;
+    while( i <= 10 ){
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
+}
+```
+
+#### Arquivo while_bissexto.c
+
+```c
+#include <stdio.h>
+
+int main(){
+
+    int ano = 1950;
+    int qdab = 0;
+
+    while( ano <= 2024){
+        if( ano %4 == 0 ){
+            printf("O Ano %d é bissexto!\n",ano);
+            qdab++;
+        }
+        ano++;
+    }
+    printf("Temos %d anos bissextos...\n",qdab);
+    return 0;
+}
+```
+
+#### Arquivo while_deck_bin.c
+
+```c
+#include <stdio.h>
+int main(){
+
+    int dec = 23;
+    int resto = 0;
+    int pos = 1;
+    int rs = 0;
+    while( dec > 0 ){
+        resto = dec % 2;
+        dec = dec / 2;
+        rs = rs + pos * resto;
+        pos = pos * 10;
+    }
+    printf("%d\n",rs);
+    return 0;
+}
+```
