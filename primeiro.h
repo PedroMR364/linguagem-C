@@ -1,5 +1,5 @@
 #include <stdio.h>
 
-int quadrado(int xn int y){
+int quadrado(int x, int y){
     return x * y;
 }
