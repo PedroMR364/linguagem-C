@@ -16,7 +16,7 @@ int main(){
 
     vdesc = preco - resultado;
 
-    printf("O preço final do produto com desconto de %2.2f é %2.2f\n",vdesc,resultado);
+    printf("O preço final do produto com desconto de
     return 0;
 
 }
